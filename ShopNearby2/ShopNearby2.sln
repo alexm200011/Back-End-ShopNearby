@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEUShopNearby2", "BEUShopNearby2\BEUShopNearby2.csproj", "{F4EB2337-BE2B-4758-97F4-0188C711EB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{2762B312-8F39-4521-8566-7EF52DDDCBBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4EB2337-BE2B-4758-97F4-0188C711EB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EB2337-BE2B-4758-97F4-0188C711EB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EB2337-BE2B-4758-97F4-0188C711EB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EB2337-BE2B-4758-97F4-0188C711EB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2762B312-8F39-4521-8566-7EF52DDDCBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2762B312-8F39-4521-8566-7EF52DDDCBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2762B312-8F39-4521-8566-7EF52DDDCBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2762B312-8F39-4521-8566-7EF52DDDCBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A3AEF12-5B79-4C59-A348-D261A872AF21}
+	EndGlobalSection
+EndGlobal

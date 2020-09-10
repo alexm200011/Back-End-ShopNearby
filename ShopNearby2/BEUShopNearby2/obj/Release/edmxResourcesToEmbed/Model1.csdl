@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="idCiudad" />
+    </Key>
+    <Property Name="idCiudad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tienda" Relationship="Self.FK_Tienda_Ciudad" FromRole="Ciudad" ToRole="Tienda" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="idProducto" />
+    </Key>
+    <Property Name="idProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="idTienda" Type="Int32" />
+    <Property Name="Stock" Type="Int32" />
+    <NavigationProperty Name="Tienda" Relationship="Self.FK_Producto_Tienda" FromRole="Producto" ToRole="Tienda" />
+  </EntityType>
+  <EntityType Name="Propietario">
+    <Key>
+      <PropertyRef Name="idPropietario" />
+    </Key>
+    <Property Name="idPropietario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombres" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="N_Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Name="Contrasena" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tienda" Relationship="Self.FK_Tienda_Propietario" FromRole="Propietario" ToRole="Tienda" />
+  </EntityType>
+  <EntityType Name="Tienda">
+    <Key>
+      <PropertyRef Name="idTienda" />
+    </Key>
+    <Property Name="idTienda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="R_Social" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="N_Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="idPropietario" Type="Int32" />
+    <Property Name="Categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idCiudad" Type="Int32" />
+    <Property Name="Latitud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Longitud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ciudad" Relationship="Self.FK_Tienda_Ciudad" FromRole="Tienda" ToRole="Ciudad" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_Producto_Tienda" FromRole="Tienda" ToRole="Producto" />
+    <NavigationProperty Name="Propietario" Relationship="Self.FK_Tienda_Propietario" FromRole="Tienda" ToRole="Propietario" />
+  </EntityType>
+  <Association Name="FK_Tienda_Ciudad">
+    <End Role="Ciudad" Type="Self.Ciudad" Multiplicity="0..1" />
+    <End Role="Tienda" Type="Self.Tienda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudad">
+        <PropertyRef Name="idCiudad" />
+      </Principal>
+      <Dependent Role="Tienda">
+        <PropertyRef Name="idCiudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Producto_Tienda">
+    <End Role="Tienda" Type="Self.Tienda" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tienda">
+        <PropertyRef Name="idTienda" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="idTienda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tienda_Propietario">
+    <End Role="Propietario" Type="Self.Propietario" Multiplicity="0..1" />
+    <End Role="Tienda" Type="Self.Tienda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Propietario">
+        <PropertyRef Name="idPropietario" />
+      </Principal>
+      <Dependent Role="Tienda">
+        <PropertyRef Name="idPropietario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ciudad" EntityType="Self.Ciudad" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Propietario" EntityType="Self.Propietario" />
+    <EntitySet Name="Tienda" EntityType="Self.Tienda" />
+    <AssociationSet Name="FK_Tienda_Ciudad" Association="Self.FK_Tienda_Ciudad">
+      <End Role="Ciudad" EntitySet="Ciudad" />
+      <End Role="Tienda" EntitySet="Tienda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Producto_Tienda" Association="Self.FK_Producto_Tienda">
+      <End Role="Tienda" EntitySet="Tienda" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tienda_Propietario" Association="Self.FK_Tienda_Propietario">
+      <End Role="Propietario" EntitySet="Propietario" />
+      <End Role="Tienda" EntitySet="Tienda" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\BEUShopNearby2.dll.config
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\BEUShopNearby2.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\BEUShopNearby2.pdb
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\EntityFramework.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\EntityFramework.SqlServer.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\Newtonsoft.Json.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\EntityFramework.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\EntityFramework.SqlServer.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\bin\Release\Newtonsoft.Json.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Release\BEUShopNearby2.csprojAssemblyReference.cache
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Release\BEUShopNearby2.csproj.CoreCompileInputs.cache
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Release\BEUShopNearby2.csproj.CopyComplete
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Release\BEUShopNearby2.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Release\BEUShopNearby2.pdb
