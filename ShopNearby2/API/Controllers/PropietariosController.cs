@@ -24,6 +24,7 @@ namespace API.Controllers
         {
             try
             {
+                
                 PropietarioBLL.Create(Propietario);
                 return Content(HttpStatusCode.Created, "Propietario creado correctamente");
             }

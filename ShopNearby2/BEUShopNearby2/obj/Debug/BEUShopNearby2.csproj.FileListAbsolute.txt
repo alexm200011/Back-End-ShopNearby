@@ -25,3 +25,17 @@ D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNear
 D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.csproj.CopyComplete
 D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.dll
 D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.pdb
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\BEUShopNearby2.dll.config
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\BEUShopNearby2.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\BEUShopNearby2.pdb
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\EntityFramework.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\Newtonsoft.Json.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\EntityFramework.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\bin\Debug\Newtonsoft.Json.xml
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.csprojAssemblyReference.cache
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.csproj.CoreCompileInputs.cache
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.csproj.CopyComplete
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.dll
+D:\Api-Web-ShopNearby2-master\Api-Web-ShopNearby2-master\Back-End-ShopNearby\ShopNearby2\BEUShopNearby2\obj\Debug\BEUShopNearby2.pdb

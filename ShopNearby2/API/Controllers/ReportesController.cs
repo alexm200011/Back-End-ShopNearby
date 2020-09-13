@@ -20,13 +20,13 @@ namespace API.Controllers
         [ResponseType(typeof(rptTiendaProducto_Result))]
         public IHttpActionResult GetReportes(int productos)
         {
-            List<rptTiendaProducto_Result> user = ReporteBLL.Get(productos);
+            List<rptTiendaProducto_Result> tienda = ReporteBLL.Get(productos);
 
             /*if (user == null)
             {
                 return Content(HttpStatusCode.OK, user);
             }*/
-            return Content(HttpStatusCode.OK, user);
+            return Content(HttpStatusCode.OK, tienda);
         }
     }
 }

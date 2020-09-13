@@ -92,6 +92,7 @@
     <Compile Include="Transactions\PropietarioBLL.cs" />
     <Compile Include="Transactions\Reporte2BLL.cs" />
     <Compile Include="Transactions\ReporteBLL.cs" />
+    <Compile Include="Transactions\EcriptacionBLL.cs" />
     <Compile Include="Transactions\TiendaBLL.cs" />
   </ItemGroup>
   <ItemGroup>

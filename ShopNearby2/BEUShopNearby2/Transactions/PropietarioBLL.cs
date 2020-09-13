@@ -16,6 +16,7 @@ namespace BEUShopNearby2.Transactions
                 {
                     try
                     {
+                        a.Contrasena = EncriptacionBLL.GetSHA256(a.Contrasena);
                         db.Propietario.Add(a);
                         db.SaveChanges();
                         transaction.Commit();
@@ -87,6 +88,7 @@ namespace BEUShopNearby2.Transactions
 
         public static Propietario ValidateLogin(Propietario propietario) {
             Entities db = new Entities();
+            propietario.Contrasena = EncriptacionBLL.GetSHA256(propietario.Contrasena);
             return db.Propietario.FirstOrDefault(x => x.Correo == propietario.Correo && x.Contrasena == propietario.Contrasena);
             
             /*foreach (var item in db.Propietario.ToList()) 
